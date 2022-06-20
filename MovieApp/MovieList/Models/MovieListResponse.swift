@@ -1,5 +1,5 @@
 //
-//  Coordinator.swift
+//  MovieListResponse.swift
 //  MovieApp
 //
 //  Created by Matheus Mendes Peres on 19/06/22.
@@ -7,6 +7,6 @@
 
 import Foundation
 
-protocol Coordinator {
-    func start()
+final class MovieListResponse: Codable {
+    let items: [Movie]
 }

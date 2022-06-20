@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class MovieCoordinator: Coordinator {
+final class MovieCoordinator {
     
     var window: UIWindow
     var navigation: UINavigationController?

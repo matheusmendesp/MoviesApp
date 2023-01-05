@@ -49,24 +49,3 @@ final class MovieListView: UIView, ViewCode {
         backgroundColor = .white
     }
 }
-
-extension MovieListView: UITableViewDataSource, UITableViewDelegate {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell: MovieListViewCell = tableView.dequeueReusableCell(withIdentifier: MovieListViewCell.identifier, for: indexPath) as? MovieListViewCell else {
-            return MovieListViewCell()
-        }
-        
-        cell.setupCell(posterImage: movie.posterImageURL, title: movie.title, index: indexPath.item)
-
-        return cell
-    }
-
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let character: Character = viewModel.characteres[indexPath.row]
-//        delegate?.didSelectCharacater(character)
-//    }
-}

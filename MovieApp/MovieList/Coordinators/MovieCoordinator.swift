@@ -11,14 +11,14 @@ final class MovieCoordinator {
     
     var window: UIWindow
     var navigation: UINavigationController?
-    var movieListController: MovieListViewController?
+    var movieListController: MoviesListViewController?
     
     init(window: UIWindow){
         self.window = window
     }
     
     func start(){
-        let controller: MovieListViewController = .init(coordinator: self)
+        let controller: MoviesListViewController = .init()
         
         movieListController = controller
         navigation = UINavigationController(rootViewController: controller)

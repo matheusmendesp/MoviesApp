@@ -1,16 +1,7 @@
-//
-//  MovieListViewCell.swift
-//  MovieApp
-//
-//  Created by Matheus Mendes Peres on 19/06/22.
-//
-
 import UIKit
 import Kingfisher
 
-final class MovieListViewCell: UITableViewCell, ViewCode {
-    
-    static let identifier: String = "moviesCell"
+final class MoviesListViewCell: UICollectionViewCell, ViewCode {
     
     var index: Int = 0
     
